@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+     
+<style>
+body
+{
+	padding:0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: white;
+}
+
+h1
+{
+	text-align: center;
+}
+
+.container 
+{
+	width: 45% ;
+	height: 60%;
+	padding: 10px;
+	box-shadow: 12px 12px 20px ;
+	text-align: center;
+	background-color: #c7c2b5;
+}
+input{
+	
+	font-size : 15px;
+	width: auto;
+}
+
+</style>	
+</head>
+<body> 
+        
+	<div class="container">
+        <h1> REGISTRATION FORM</h1>
+                
+<form id = "form">
+
+        <label for="First Name">First Name:</label>
+        <input type="text" placeholder="Enter First name" name="fname" id="fname" >
+		<br>
+		<br>
+     
+        
+        <label for="Last Name">Last Name:</label>
+        <input type="text" placeholder="Enter Last name" name="lname" id="lname" >
+		<br>
+        <br>
+		
+		<label for="email">Email:</label>
+        <input type="email" placeholder="Enter email" name="email" id="email" >
+		<br>
+        <br>
+	
+        <label>Select Gender: </label>
+       
+	   <select name="Gender" id="Gender" >
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        
+	   <br>
+	    <br>
+       
+          
+        <label for="Phone">Phone Number:</label>
+        <input type="text"  placeholder="Enter Phone Number" name="phone" id="phone">
+		<br>
+        <br>
+		
+		
+		<label for="Address">Address: </label>
+		<textarea name="Address" rows="4" cols="20" Placeholder = "Enter Address" id = "Address"></textarea>
+		<br>
+        <br>
+           
+        Nationality:
+        <select name="nationality" id= "nationality">
+            <option value="">-- select one --</option>
+            <option value="afghan">India</option>
+            <option value="albanian">Bhutan</option>
+            <option value="algerian">Nepal</option>
+            <option value="american">America</option>
+            <option value="andorran">Europe</option>
+            <option value="angolan">Russia</option>
+            <option value="antiguans">Romania</option>
+            <option value="argentinean">Spain</option>
+            <option value="australian">Australian</option>
+            <option value="austrian">Austrian</option>
+            </select>
+        <br>
+        <br>
+        College:
+        <select list="College" id="College">
+            <option value="">-- select one --</option>
+            <option value="Institute of Engineering and technology,Lucknow">Institute of Engineering and technology,Lucknow</option>
+            <option value="Motilal Nehru National Institute of Technology Allahabad">Motilal Nehru National Institute of Technology Allahabad</option>
+            <option value="Indian Institute of Technology Delhi">Indian Institute of Technology Delhi</option>
+            <option value="Teerthanker Mahaveer University">Teerthanker Mahaveer University</option>
+            <option value="MIT Group of Institutions">MIT Group of Institutions</option>
+            </select>
+        <br>
+        <br>
+
+        Subject:
+        <input type="checkbox" id="sub" name="Mathematics" value="Mathematics">
+        <label for="sub1">Mathematics</label>
+        <input type="checkbox" id="sub" name="Physics" value="Physics">
+        <label for="sub2"> Physics</label>
+        <input type="checkbox" id="sub" name="Chemistry" value="Chemistry">
+        <label for="sub3"> Chemistry</label>
+        <input type="checkbox" id="sub" name="Computer" value="Computer">
+        <label for="sub4"> Computer</label>
+        <input type="checkbox" id="sub" name="English" value="English">
+        <label for="sub5"> English</label>
+        <br>
+        <br>
+		
+		<input class="form-check-input" type="checkbox" required> Remember me
+		<br>
+		<br>
+		<button type="submit" onclick="myfun()">Submit</button>
+</form>
+
+
+
+
+<script>
+    function myfun()
+	{
+	 var fname = document.getElementById("fname").value;
+	 var lname = document.getElementById("lname").value;
+	 var email = document.getElementById("email").value;
+	 var Gender = document.getElementById("Gender").value;
+	 var phone = document.getElementById("phone").value;
+	 var Address = document.getElementById("Address").value;
+	 var nationality = document.getElementById("nationality").value;
+     var College = document.getElementById("College").value;
+     
+     
+ 
+	 document.write("Registration Form Information <br> <br>" + "First Name: " +fname+"<br>");
+	 document.write("<br>Last Name: " +lname+"<br>");
+	 document.write("<br>Email: " +email+"<br>");
+	 document.write("<br>Gender: " +Gender+"<br>");
+	 document.write("<br>Phone: " +phone+"<br>");
+	 document.write("<br>Address: " +Address+"<br>");
+     document.write("<br>Nationality: " +nationality+"<br>");
+     document.write("<br>College: " +College+"<br>");
+    
+     let btnShow= document.querySelector('button');
+     let result = document.querySelector()
+    
+	 btnShow.addEventListener('click', () =>{
+         let checkbox = document.querySelector('input[type="checkbox"]:checked');
+         result.innerText = checkbox.value;
+     });
+	 
+	 
+	}
+</script>
+</body>
+</html>
+        
+        

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function myfun()
+        {
+            var a= document.getElementById("name").value;
+            var b= document.getElementById("email").value;
+            var c= document.getElementById("address").value;
+           document.getElementById("p1").innerHTML= "Your name:" +a ;
+           document.getElementById("p2").innerHTML= "Your email:" +b ;
+           document.getElementById("p3").innerHTML= "Your Adress:" +c ;
+           console.log(a);
+           console.log(b);
+           console.log(c)
+            
+        }
+    </script>
+</head>
+<body>
+    <form>
+    Enter Your Name:
+    <input type="text" id="name">
+    <br>
+    <br>
+
+    Enter you Email:
+    <input type="email" id="email" >
+    <br>
+    <br>
+
+    Enter your Address:
+    <input type="address" id="address" >
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <input type="button" id="btn" value="submit" onclick="myfun()" >  
+    </form>
+</body>
+</html>

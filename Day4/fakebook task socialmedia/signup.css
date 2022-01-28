@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px dotted black;
+    margin: auto;
+    margin-left: 25%;
+    margin-right: 35%;
+    border-radius: 4%;
+    width: 45% ;
+    height: 60%;
+    padding: 10px;
+    box-shadow: 12px 12px 20px ;
+    text-align: center;
+    background-color: #c7c2b5;
+  }
+  button {
+    background-color: black;
+    color: white;
+    border-radius: 24%;
+    font-size: 23px;
+	 width: 100px;
+	 height:58px;
+	
+
+
+
+  }

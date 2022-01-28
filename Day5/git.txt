@@ -1,0 +1,13 @@
+
+Hello! Sudha Kashyap
+This is all the git Commands that will help you to upload your project on github.
+
+Git Commands
+
+git init
+git status
+git add .
+git status
+git commit -m "Initial commit"
+git remote add origin "link of ssh"
+git push origin master
