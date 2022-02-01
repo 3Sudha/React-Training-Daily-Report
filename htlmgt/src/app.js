@@ -1,6 +1,6 @@
 const express = require("express");
 require("./db/conn");
-const Hotel= require("./models/hotel");
+const Hotel= require("./models/Hotel");
 const app = express();
 
 app.use(express.json())
@@ -50,21 +50,40 @@ app.get("/hotelmgt/:id", async(req, res) => {
       const _id= req.params;
 
       const hoteldata= await Hotel.findById(_id);
-      console.log(hoteldata);
+      
       res.end(hoteldata);
 
       if(!hoteldata)
       {
-          return res.status(404).send();
+          return res.send();
+          console.log(hoteldata);
       }
       else{
           res.send(hoteldata);
+          console.log(hoteldata);
       }
      
     }
     catch(e){
-    res.end(e);
+    res.send(e);
+    
     }
+})
+
+
+
+//Update the data
+app.patch("/hotelmgt/:id",  async(req,res) =>{
+    //try{
+        const _id= req.params;
+        const updateHtl = await Hotel.findById(_id, req.body);
+        console.log(updateHtl);
+    //     res.send(updateHtl);
+    // }
+    // catch(e){
+    //     res.status(404).send(updateHtl);
+
+    // }
 })
 
 
