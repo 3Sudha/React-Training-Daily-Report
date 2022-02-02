@@ -14,6 +14,13 @@ import {Myapp} from './components/Calculator';
 import {Formapp} from './components/Form1';
 import Addition from './components/Avg';
 import {Mygrade} from './components/GradeCal';
+import App1 from './components/CompLifeCy';
+import Bind from './components/bind';
+import Eventbind from './components/Eventbind';
+import App3 from './components/Formcon';
+import { Formapp1 } from './components/Myform';
+import { Formapp2 } from './components/ValidForm';
+import {Condition} from './components/condition'
 
 
 
@@ -34,9 +41,7 @@ class App extends Component{
     return(
       <div className="App">
         
-      <Mygrade a={90} b={90} c={85}/> 
-      <Message/>
-      <Addition  a={90} b={90} c={85}/>
+      < Formapp2/>
       
 
         
@@ -51,3 +56,7 @@ class App extends Component{
     <Funpro name="Megha" function="Arrow Function" /> */
 
 export default App;
+{/* <Mygrade a={90} b={90} c={85}/> 
+      <Message/>
+      <Addition  a={90} b={90} c={85}/>
+       */}
