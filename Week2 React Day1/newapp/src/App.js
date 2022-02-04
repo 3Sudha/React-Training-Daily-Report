@@ -20,7 +20,10 @@ import Eventbind from './components/Eventbind';
 import App3 from './components/Formcon';
 import { Formapp1 } from './components/Myform';
 import { Formapp2 } from './components/ValidForm';
-import {Condition} from './components/condition'
+import {Condition} from './components/condition';
+//import {PersonList} from '/components/get';
+import {PostForm} from './components/postform';
+import {App5} from './components/Location';
 
 
 
@@ -41,7 +44,7 @@ class App extends Component{
     return(
       <div className="App">
         
-      < Formapp2/>
+      < App5/>
       
 
         
