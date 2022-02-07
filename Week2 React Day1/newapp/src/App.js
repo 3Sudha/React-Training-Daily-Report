@@ -24,6 +24,7 @@ import {Condition} from './components/condition';
 //import {PersonList} from '/components/get';
 import {PostForm} from './components/postform';
 import {App5} from './components/Location';
+//import {App9} from '.components/Latitu';
 
 
 

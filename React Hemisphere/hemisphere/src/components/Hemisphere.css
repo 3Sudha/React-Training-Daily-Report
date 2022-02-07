@@ -1,0 +1,44 @@
+
+body { background-color: lightblue; }
+
+.north{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;  
+    object-fit: cover;
+    background-color:blanchedalmond;
+   
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+h3{
+    text-align: center;
+}
+img{
+    border-radius: 15px;
+    width: 100%;
+    display:flex;
+}
+
+.South{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;  
+    object-fit: cover;
+    
+    background-color:blanchedalmond;
+}

@@ -19,13 +19,16 @@ export class Formapp2 extends React.Component{
         let formIsValid = true;
     
         //Name
-        if (!fields["name"]) {
+        if (!fields["name"]) 
+        {
           formIsValid = false;
           errors["name"] = "Cannot be empty";
         }
     
-        if (typeof fields["name"] !== "undefined") {
-          if (!fields["name"].match(/^[A-Z]+$/)) {
+        if (typeof fields["name"] !== "undefined") 
+        {
+          if (!fields["name"].match(/^[A-Z]+$/)) 
+          {
             formIsValid = false;
             errors["name"] = "Only letters";
           }
