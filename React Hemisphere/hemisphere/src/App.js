@@ -1,15 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Location from './components/Locations';
-// import north from './north.png';
-// import South from './South.jpg';
-
-
+import App4 from './components/time';
 
 function App() {
   return (
     <div className="App">
-      <Location/>
+      <App4/>
     </div>
   );
 }
