@@ -9,7 +9,7 @@ import App1 from './components/App1';
 ReactDOM.render(
   <React.StrictMode>
     <App1 />
-    {/* <SeacrhInput/> */}
+    {/*   <SeacrhInput/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
